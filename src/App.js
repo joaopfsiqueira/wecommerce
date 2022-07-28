@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <header >
-        <a href="/">Google</a>
+        <a href="/">Amazon</a>
       </header>
       <main>List products</main>
     </div>
