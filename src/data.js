@@ -4,7 +4,7 @@ const data = {
             name: 'Call of Duty Cold War PS5',
             slug: 'cod-cold-war-ps5',
             category: 'PS5',
-            image: '/images/cod-cold-war-ps5.jpeg',
+            image: '/images/cod-cold-war-ps5.jpg',
             price: 250,
             countIStock: 10,
             brand: 'Activision',
@@ -16,7 +16,7 @@ const data = {
             name: 'Call of duty Vanguard PS5',
             slug: 'cod-vanguard-ps5',
             category: 'PS5',
-            image: '/images/cod-vanguard-ps5.jpeg',
+            image: '/images/cod-vanguard-ps5.jpg',
             price: 350,
             countIStock: 20,
             brand: 'Activision',
@@ -29,7 +29,7 @@ const data = {
             name: 'Maneater PS5',
             slug: 'maneater-ps5',
             category: 'PS5',
-            image: '/images/man-eater-ps5.jpeg',
+            image: '/images/man-eater-ps5.jpg',
             price: 150,
             countIStock: 4,
             brand: 'Deep Silver',
@@ -41,7 +41,7 @@ const data = {
             name: 'PS5',
             slug: 'ps5',
             category: 'PS5',
-            image: '/images/ps5.jpeg',
+            image: '/images/ps5.jpg',
             price: 5000,
             countIStock: 1,
             brand: 'Sony',
@@ -51,3 +51,6 @@ const data = {
         }
     ],
 };
+
+
+module.exports = data;
