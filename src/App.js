@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import data from './data';
 import HomeScreen from './screens/HomeScreen';
@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
     <div>
       <header >
-        <a href="/">Amazon</a>
+        <Link to="/">Amazon</Link>
       </header>
 
       <main>
