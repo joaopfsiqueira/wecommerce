@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
-import { Container } from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import {LinkContainer} from 'react-router-bootstrap';
 
@@ -19,7 +19,6 @@ function App() {
             </LinkContainer>
           </Container>
         </Navbar>
-        <Link to="/">Amazon</Link>
       </header>
 
       <main>
