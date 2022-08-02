@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useState } from 'react';
 import { Link } from 'react-router-dom'
 import axios from 'axios'; 
-import logger from 'use-reducer-logger'
+import logger from 'use-reducer-logger';
 
 
 const reducer = (state, action) => {
@@ -45,7 +45,7 @@ function HomeScreen() {
     return <div>
         <h1>Featured Products</h1>
         <div className="products">
-        {
+        { loading ? (<div>Loading...</div>) : error? (<div>{error}</div>) : (
           products.map(product => (
             <div className="product" key={product.slug}>
             <Link to={`/product/${product.slug}`}>
@@ -61,10 +61,11 @@ function HomeScreen() {
               <button>Add to cart</button>
               </div>
             </div>
-          ))
+          )))
         }
         </div>
     </div>
+    
 }
 
 export default HomeScreen;
