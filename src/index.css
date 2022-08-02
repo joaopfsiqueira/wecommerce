@@ -21,6 +21,10 @@ main {
   justify-content: center;
 }
 
+.rating span {
+  color: #ffc000;
+}
+
 .product {
   border: 1px solid #404040;
   margin: 1rem;
