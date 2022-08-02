@@ -36,8 +36,8 @@ function Rating (props) {
                 <i 
                     className={
                         rating >= 4
-                        ? 'fas fa-star' :
-                         rating >= 3.5 
+                        ? 'fas fa-star' 
+                        :rating >= 3.5 
                         ? 'fas fa-star-half-o' 
                         : 'far fa-star-o'}
                 />
