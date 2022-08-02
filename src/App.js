@@ -1,14 +1,24 @@
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-import data from './data';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import { Container } from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import {LinkContainer} from 'react-router-bootstrap';
+
 
 function App() {
   return (
     <BrowserRouter>
     <div>
       <header >
+        <Navbar bg="dark" variant="dark">
+          <Container>
+            <LinkContainer to="/">
+              <Navbar.Brand href="/">Amazon</Navbar.Brand>
+            </LinkContainer>
+          </Container>
+        </Navbar>
         <Link to="/">Amazon</Link>
       </header>
 
