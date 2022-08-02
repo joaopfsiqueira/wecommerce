@@ -22,12 +22,14 @@ function App() {
       </header>
 
       <main>
+        <Container>
         <Routes>
           <Route path="/product/:slug" element={<ProductScreen />} />
           <Route path="/" element={<HomeScreen/>} />
         </Routes>
+        </Container>
       </main>
-
+      
     </div>
     </BrowserRouter>
   );
