@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Rating from "../components/Rating";
+import Card from 'react-bootstrap/Card';
 
 
 const reducer = (state, action) => {
@@ -78,7 +79,22 @@ function ProductScreen() {
                     </ListGroup.Item>
                 </ListGroup>
             </Col>
-            <Col md={3}></Col>
+            <Col md={3}>
+                <Card>
+                    <Card.Body>
+                        <ListGroup variant="flush">
+                            <ListGroup.Item>
+                                <Row>
+                                    <Col>Price:</Col>
+                                    <Col>
+                                        <strong>${product.price}</strong>
+                                    </Col>
+                                </Row>
+                            </ListGroup.Item>
+                        </ListGroup>
+                    </Card.Body>
+                </Card>
+            </Col>
            </Row>
         </div>
         )
