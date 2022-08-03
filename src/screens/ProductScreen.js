@@ -3,6 +3,8 @@ import { useEffect, useReducer } from "react";
 import { useParams } from "react-router-dom";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Rating from "../components/Rating";
 
 
 const reducer = (state, action) => {
@@ -57,7 +59,25 @@ function ProductScreen() {
                 alt={product.name} 
                 />
             </Col>
-            <Col md={3}></Col>
+            <Col md={3}>
+                <ListGroup variant="flush">
+                    <ListGroup.Item>
+                        <h3>{product.name}</h3>
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                        <Rating
+                        rating={product.rating}
+                        numReviews={product.numReviews}
+                        />
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                        Price: ${product.price}
+                    </ListGroup.Item>
+                    <ListGroup.Item>
+                        Description: <p>{product.description}</p>
+                    </ListGroup.Item>
+                </ListGroup>
+            </Col>
             <Col md={3}></Col>
            </Row>
         </div>
